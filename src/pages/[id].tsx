@@ -103,10 +103,10 @@ const Project: NextPage = () => {
                         </ListDescription>
 
                         <ButtonSet>
-                            <Link href={project.website}>
+                            <Link href={project.website} target="_blank">
                                 <LinkTo outlined>Acessar</LinkTo>
                             </Link>
-                            <Link href={project.repository}>
+                            <Link href={project.repository} target="_blank">
                                 <LinkTo outlined={false}>Repositório</LinkTo>
                             </Link>
                         </ButtonSet>

@@ -44,7 +44,7 @@ export function MyDevelopment() {
           </DescriptionText>
 
           <DescriptionText>
-            Não tenho foco no back-end mas consigo fazer o necessário para servir o front-end com segurança e salvar dados em banco de dados. Como eu sempre uso Javascript eu optei pelo <span>Node.js</span> com Express. E já usei <span>MongoDB</span> e <span>FaunaDB</span>. Além disso uso algumas dependências para auxiliar no desenvolvimento.
+            Não tenho foco no back-end mas consigo fazer o necessário para servir o front-end com segurança e manipular dados em banco de dados. Como eu sempre uso Javascript eu optei pelo <span>Node.js</span> com <span>Express</span>. E já usei <span>MongoDB</span> e <span>FaunaDB</span>.
           </DescriptionText>
         </DescriptionContainer>
 
@@ -77,7 +77,7 @@ export function MyDevelopment() {
               </InfoTitle>
 
               <InfoDescription>
-                A criação de interfaces modernas e performáticas está se tornando cada vez mais comum. E para acompanhar isso eu faço o uso de algumas plataformas aonde como behance e dribble aonde eu posso me inspirar em alguma parte do layout. E a performance da aplicação é muito importante, pensando nisso eu dou uma atenção maior para frameworks e bibliotecas que ajudam na performance.
+                Interfaces modernas com performance, segurança e usabilidade. Esse é o futuro que eu busco para minhas aplicações.
               </InfoDescription>
 
             </InfoSet>

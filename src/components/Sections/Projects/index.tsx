@@ -66,7 +66,7 @@ export function Projects() {
 
                 <SectionTitle title="Alguns dos meus projetos" />
                 <Description>
-                    Aqui tem alguns dos meus projetos, clique em qual você quer saber mais e veja o repositório e página ou aplicativo se estiver disponível.
+                    Aqui tem alguns dos meus projetos, clique em qual você quer saber mais e veja o <span>repositório</span> e <span>página</span> ou aplicativo se estiver disponível.
                 </Description>
 
                 <HorizontalListContainer>

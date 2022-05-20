@@ -3,7 +3,11 @@ import styled from "styled-components";
 
 
 
-export const Container = styled.section``
+export const Container = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 
 
@@ -18,6 +22,25 @@ export const MainContainer = styled.div`
         flex-direction: column;
     }
 `
+
+
+
+export const Description = styled.p`
+    width: 100%;
+    text-align: center;
+    color: ${({ theme }) => theme.colors.gray60};
+    max-width: 800px;
+    margin-bottom: 5rem;
+
+    span {
+        color: #FFA800;
+    }
+
+    @media (max-width: 991.98px) {
+        width: 100%;
+    }
+`
+
 
 
 
@@ -174,6 +197,7 @@ export const StickerMobileContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2rem;
 
     @media (min-width: 575.99px) {
         display: none;

@@ -45,7 +45,7 @@ export function Presentation() {
                     </ButtonsContainer>
 
                     <Description>
-                        Neste portfolio vou tentar mostrar um pouco mais sobre mim, não apenas minha vida profissional mas também do meu dia a dia
+                        Neste portfolio vou tentar mostrar um pouco mais sobre minha experiência com programação.
                     </Description>
                 </Container>
         </SafeArea>

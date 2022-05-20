@@ -60,7 +60,7 @@ interface LinkToProps {
     outlined: boolean;
 }
 
-export const LinkTo = styled.a<LinkToProps>`
+export const LinkTo = styled.button<LinkToProps>`
     color: ${({outlined}) => outlined?'#aaa':'#000'};
     border: ${({outlined}) => outlined?'1px solid #aaa':'1px solid'};
     background: ${({outlined}) => outlined?'transparent':'#fff'};

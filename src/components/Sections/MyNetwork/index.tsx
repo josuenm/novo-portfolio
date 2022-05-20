@@ -11,6 +11,7 @@ import {
     Comments, 
     Container, 
     DashedStick, 
+    Description, 
     FinalStick, 
     HeaderStick, 
     MainContainer, 
@@ -35,9 +36,13 @@ export function MyNetwork() {
                 <Checkpoint 
                     title="Alguns dados" 
                     chapter={2}
-                    phrase="A primeira impressão é a que fica" />
+                    phrase="Networking is your net worth" />
 
                 <SectionTitle title="Minha rede profissional" />
+
+                <Description>
+                    Aqui esta minhas redes profissionais, sempre dou prefêrencia ao <span>LinkedIn</span>.
+                </Description>
 
                 <MainContainer>
                     <Comments>

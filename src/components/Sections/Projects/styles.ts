@@ -17,6 +17,10 @@ export const Description = styled.p`
     max-width: 800px;
     margin-bottom: 5rem;
 
+    span {
+        color: #00FF19;
+    }
+
     @media (max-width: 991.98px) {
         width: 100%;
     }
@@ -113,10 +117,13 @@ export const LinkToProject = styled.a`
     border-radius: .25rem;
     cursor: pointer;
 
-    transition: ease .4s all;
-    &:hover {
-        background-color: #fff;
-        color: #000;
+    @media (min-width: 991.99px) {
+        
+        transition: ease .4s all;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
     }
 `
 

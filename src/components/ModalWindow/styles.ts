@@ -12,22 +12,24 @@ export const Container = styled.div`
 
     @media (max-width: 575.98px) {
         width: 350px;
+        transform: scale(.9);
     }
-
+    
     @media (min-width: 575.99px) and (max-width: 991.98px) {
         width: 400px;
     }
 
     &.modalInterface {
         position: absolute;
-        top: 13rem;
-        left: 3rem;
+        top: 10rem;
+        left: 3.5rem;
         z-index: 2;
-
+        transform: scale(.9);
+        
 
         @media (max-width: 575.98px) {
             left: 0;
-            transform: scale(1.05);
+            transform: scale(.95);
         }
     }
 `
