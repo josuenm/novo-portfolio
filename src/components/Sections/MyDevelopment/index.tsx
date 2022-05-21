@@ -21,11 +21,11 @@ import {
 export function MyDevelopment() {
 
   const firstWords = [
-    'ReactJS', 'NextJS', 'ChakraUI', 'Bootstrap', 'HTML', 'CSS', 'SASS', 'NodeJS', 'Express', 'MongoDB'
+    'ReactJS', 'NextJS', 'ChakraUI', 'Bootstrap', 'HTML', 'CSS', 'SASS', 'NodeJS', 'Express'
   ]
 
   const secondWords = [
-    'Javascript', 'Typescript', 'Redux Toolkit', 'React-Hook-Form', 'Styled-components', 'Axios', 'MirageJS', 'Express', ' NodeJS', 'MongoDB',
+    'Javascript', 'Typescript', 'Redux Toolkit', 'React-Hook-Form', 'Styled-components', 'Axios', 'MirageJS', 'MongoDB', 'Firebase'
   ]
 
 
