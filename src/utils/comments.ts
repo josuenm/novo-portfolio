@@ -9,17 +9,17 @@ const comments = [
     },
     {
         id: 2,
-        name: 'Asama',
-        message: 'Meu portfolio de fotografia ficou bem moderno e profissional',
-        profession: 'Fotografo',
+        name: 'Fabiano',
+        message: 'Minha landing page ficou ótima e muito rápida. Já esta convertendo bastante pelos meus afiliados',
+        profession: 'Info-produtor',
         image: 'Profile2.jpg'
     },
     {
         id: 3,
-        name: 'Rafael',
-        message: 'A landing page ficou da forma que eu solicitei, bem simples focado em vendas, obrigado e sucesso ai',
-        profession: 'Co-produtor',
-        image: 'Profile3.webp'
+        name: 'Karina',
+        message: 'A landing page ficou incrível! Muito linda e muito bem estruturada. Otimo para o meu produto',
+        profession: 'Co-produtora',
+        image: 'Profile3.jpg'
     }
 ]
 
