@@ -9,7 +9,6 @@ export const Container = styled.div`
     flex-direction: column;
     width: 100%;
     overflow-x: hidden;
-
     
     @media (max-width: 991.98px) {
         width: calc(100vw - (2 * .8rem));
@@ -53,6 +52,7 @@ export const ScrollerWrapper = styled.div`
     display: flex;
     flex-wrap: nowrap;
     padding: 1rem 0;
+
 
     &:nth-of-type(1) {
         border-top: 1px solid ${({ theme }) => theme.colors.gray50};

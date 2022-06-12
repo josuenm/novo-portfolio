@@ -3,9 +3,16 @@ import { Container } from "./styles";
 
 
 
+interface SubmitProps {
+    title: string;
+    margin?: string;
+    isDisabled?: boolean;
+}
 
-export function Submit() {
+
+
+export function Submit({ title, margin, isDisabled }: SubmitProps) {
     return (
-        <Container />
+        <Container value={title} margin={margin} isDisabled={isDisabled} />
     )
 }

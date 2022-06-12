@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
 
 
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 7px;
         height: 0;
         border-radius: 3rem;
         background-color: #101010;

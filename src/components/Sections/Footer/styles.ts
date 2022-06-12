@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
     width: 100%;
-    background: #202020;
+    background: #101010;
     border-top: 1px solid ${({ theme }) => theme.colors.gray50};
     padding: 2rem 1.5rem;
 

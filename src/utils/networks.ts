@@ -2,7 +2,7 @@ const networks = [
     {
         id: 1,
         name: 'LinkedIn',
-        message: 'Veja algumas informações profissionais minhas atráves do meu LinkedIn. Clique abaixo e acesse.',
+        message: 'Veja algumas informações profissionais atráves do meu LinkedIn. Clique abaixo e acesse.',
         url: 'https://www.linkedin.com/in/josué-n-mendonça-542409207/',
         isDownloadable: false
     },

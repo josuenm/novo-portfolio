@@ -1,4 +1,7 @@
-import { NextPage } from "next";
+import nookies from "nookies";
+import Link from "next/link";
+import Head from "next/head";
+import { GetServerSideProps, NextPage } from "next";
 import { SafeArea } from "src/components/SafeArea";
 import { Footer } from "src/components/Sections/Footer";
 import { ProjectHeader } from "src/components/Header";
@@ -17,17 +20,15 @@ import {
     TechnologiesTitle, 
     Title 
 } from "src/styles/pages/Project"
-import { useRouter } from "next/router";
-import { SetStateAction, useEffect, useState } from "react";
-import projects from "src/utils/projects";
-import Link from "next/link";
-import Head from "next/head";
+import projectApi from "src/services/project";
+
+
 
 
 
 type ProjectProps = {
-    id: number,
-    name: string,
+    _id: string,
+    title: string,
     description: string,
     technologies: string[],
     repository: string,
@@ -36,39 +37,64 @@ type ProjectProps = {
 
 
 
-const Project: NextPage = () => {
+export const getServerSideProps:GetServerSideProps = async (ctx) => {
 
-    const router = useRouter()
-    const query = router.query
+    const { id } = ctx.query;
 
+    const res = await projectApi.findOne(id as string) as { status: number, data: ProjectProps };
 
-    const [project, setProject] = useState<any>({
-        name: '',
-        description: '',
-        technologies: [''],
-        repository: '',
-        website: '',
-    })
+    console.log(res)
 
-    useEffect(() => {
-
-        const selectedProject = projects.find(p => {
-            if(p.name.replace(/\s/g, '') === query.id) {
-                return p
+    switch(res.status) {
+        case 200:
+            return {
+                props: {
+                    project: res.data
+                }
             }
-        })
+            break;
+        
+        case 500:
+            return {
+                redirect: {
+                    destination: '/dashboard',
+                    permanent: false,
+                }
+            }
+            break;
 
-        setProject(selectedProject as SetStateAction<ProjectProps | null>)
+        case 401:
+            nookies.destroy({}, 'jnm.token')
+            return {
+                redirect: {
+                    destination: '/login',
+                    permanent: false,
+                }
+            }
+            break;
+        
+        default:
+            break;
+    }
 
-    }, [query.id])
+
+    return {
+        props: {
+        }
+    }
+}
+
+
+const Project: NextPage = ({ project }: any) => {
+
 
     return (
         <>
             <Head>
-                <title>{project.name} | Portfolio</title>
+                <title>{project.title} | Portfolio</title>
             </Head>
             <SafeArea>
-                <ProjectHeader />
+                <ProjectHeader href="/" />
                 <Container>
                     <ImageContainer>
                         <Screen>
@@ -91,7 +117,7 @@ const Project: NextPage = () => {
                         </Screen>
                     </ImageContainer>
                     <InfoContainer>
-                        <Title>{project.name}</Title>
+                        <Title>{project.title}</Title>
                         <Description>{project.description}</Description>
 
                         <TechnologiesTitle>Tecnologias usadas</TechnologiesTitle>

@@ -110,10 +110,10 @@ export function Header() {
 
 
 
-export function ProjectHeader() {
+export function ProjectHeader({ href }: { href: string }) {
   return (
     <ProjectHeaderContainer>
-      <Link href="/">
+      <Link href={href}>
         <BackButton>Voltar</BackButton>
       </Link>
 
