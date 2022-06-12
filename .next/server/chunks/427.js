@@ -45,8 +45,9 @@ function SafeArea({
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2167);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
+const BACK_END_URL = "https://server-portfolio-theta.vercel.app";
 const api = axios__WEBPACK_IMPORTED_MODULE_0___default().create({
-  baseURL: 'http://localhost:8080/api'
+  baseURL: `${BACK_END_URL}/api`
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (api);
 

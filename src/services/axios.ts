@@ -1,9 +1,11 @@
 import axios from 'axios'
 
 
+const BACK_END_URL = process.env.BACK_END_URL
+
 
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api'
+    baseURL: `${BACK_END_URL}/api`
 })
 
 

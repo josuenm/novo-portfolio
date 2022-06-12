@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ['github.com'],
   },
+  env: {
+    BACK_END_URL: process.env.BACK_END_URL,
+  },
 };
 
 module.exports = nextConfig;

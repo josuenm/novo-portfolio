@@ -7,7 +7,7 @@
   "/dashboard": "pages/dashboard.html",
   "/": "pages/index.html",
   "/login": "pages/login.html",
-  "/dashboard/[id]": "pages/dashboard/[id].js",
+  "/dashboard/[id]/edit": "pages/dashboard/[id]/edit.js",
   "/[id]": "pages/[id].js",
-  "/dashboard/[id]/edit": "pages/dashboard/[id]/edit.js"
+  "/dashboard/[id]": "pages/dashboard/[id].js"
 }
