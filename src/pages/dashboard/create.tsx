@@ -47,6 +47,12 @@ const CreateProject = () => {
 
     const router = useRouter();
 
+    const cookies = nookies.get(null, 'jnm.token')
+
+    if(cookies['jnm.token'] === null) {
+        router.push('/login')
+    }
+
     const [techs, setTechs] = useState<string[] | []>([]);
 
     const [generalError, setGeneralError] = useState({

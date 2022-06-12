@@ -31,6 +31,12 @@ const Dashboard: NextPage = () => {
 
     const router = useRouter()
 
+    const cookies = nookies.get(null, 'jnm.token')
+
+    if(cookies['jnm.token'] === null) {
+        router.push('/login')
+    }
+
     function handleExit() {
         nookies.destroy({}, 'jnm.token')
         router.push('/login')
