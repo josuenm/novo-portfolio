@@ -2,10 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import ExitIcon from "src/assets/icons/Exit.svg"
 import nookies from "nookies";
-import { NextPage } from "next";
+import Link from "next/link";
+import Router from "next/router";
+import { GetServerSideProps, NextPage } from "next";
 import { ListOfProjects } from "src/components/ListOfProjects";
 import { SafeArea } from "src/components/SafeArea";
-import { useRouter } from "next/router";
+import { Button } from "src/components/Button";
 import { 
     Container, 
     Title, 
@@ -21,25 +23,32 @@ import {
     SectionContainer,
     ButtonContainer,
 } from "src/styles/pages/Dashboard";
-import { Button } from "src/components/Button";
-import Link from "next/link";
 
 
-
-
-const Dashboard: NextPage = () => {
-
-    const router = useRouter()
+export const getServerSideProps:GetServerSideProps = async (ctx: any) => {
 
     const cookies = nookies.get(null, 'jnm.token')
 
-    if(cookies['jnm.token'] === null) {
-        router.push('/login')
+    if(cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
+        return {
+            redirect: {
+                destination: '/login',
+                permanent: false
+            }
+        }
     }
 
+    return {
+        props: {}
+    }
+}
+
+const Dashboard: NextPage = () => {
+    
+    
     function handleExit() {
         nookies.destroy({}, 'jnm.token')
-        router.push('/login')
+        Router.push('/login')
     }
 
     return (
@@ -80,11 +89,11 @@ const Dashboard: NextPage = () => {
                         <SetContainer>
                             <SectionContainer>
                                 <Title marginBottom="1.5rem">Criar projeto</Title>
-                                <Link href="/dashboard/create">
                                     <ButtonContainer>
-                                        <Button title="Criar" />
+                                        <Link href="/dashboard/create">
+                                            <Button title="Criar" />
+                                        </Link>
                                     </ButtonContainer>
-                                </Link>
                             </SectionContainer>
                             <SectionContainer>
                                 <Title>Projetos</Title>

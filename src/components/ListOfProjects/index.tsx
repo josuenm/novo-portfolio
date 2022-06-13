@@ -40,7 +40,9 @@ export function ListOfProjects({ href }: { href?: string }) {
 
         setIsLoading(false)
 
-        setProjects(res.data.slice(0).reverse());
+        if(res.data) {
+            setProjects(res.data.slice(0).reverse());
+        }
     }, [])
 
     useEffect(() => {

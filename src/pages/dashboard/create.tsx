@@ -1,5 +1,7 @@
 import * as yup from "yup"
 import nookies from "nookies";
+import Head from "next/head";
+import projectApi from "src/services/project";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useEffect, useRef, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -7,6 +9,10 @@ import { Label } from "src/components/Form/Label";
 import { Submit } from "src/components/Form/Submit";
 import { ErrorText } from "src/components/Form/ErrorText";
 import { Input, InputWithRef } from "src/components/Form/Input";
+import { Set } from "src/components/Form/Set";
+import { SafeArea } from "src/components/SafeArea";
+import { useRouter } from "next/router";
+import { ProjectHeader } from "src/components/Header";
 import { 
     Container, 
     Form, 
@@ -17,12 +23,8 @@ import {
     AddContainer, 
     AddButton 
 } from "src/styles/pages/CreateProject";
-import { Set } from "src/components/Form/Set";
-import Head from "next/head";
-import { SafeArea } from "src/components/SafeArea";
-import projectApi from "src/services/project";
-import { useRouter } from "next/router";
-import { ProjectHeader } from "src/components/Header";
+import { GetServerSideProps } from "next";
+
 
 
 type Inputs = {
@@ -43,15 +45,29 @@ const schema = yup.object({
 
 
 
-const CreateProject = () => {
-
-    const router = useRouter();
+export const getServerSideProps:GetServerSideProps = async (ctx: any) => {
 
     const cookies = nookies.get(null, 'jnm.token')
 
-    if(cookies['jnm.token'] === null) {
-        router.push('/login')
+    if(cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
+        return {
+            redirect: {
+                destination: '/login',
+                permanent: false
+            }
+        }
     }
+
+    return {
+        props: {}
+    }
+}
+
+
+
+const CreateProject = () => {
+
+    const router = useRouter();
 
     const [techs, setTechs] = useState<string[] | []>([]);
 

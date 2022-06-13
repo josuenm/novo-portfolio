@@ -127,7 +127,10 @@ function ListOfProjects({
     setIsLoading(true);
     const res = await project/* default.getAll */.Z.getAll();
     setIsLoading(false);
-    setProjects(res.data.slice(0).reverse());
+
+    if (res.data) {
+      setProjects(res.data.slice(0).reverse());
+    }
   }, []);
   (0,external_react_.useEffect)(() => {
     getAllProjects();
