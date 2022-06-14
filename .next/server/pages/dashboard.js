@@ -128,13 +128,13 @@ var jsx_runtime_ = __webpack_require__(997);
 
 
 const getServerSideProps = async ctx => {
-  const cookies = external_nookies_default().get(null, 'jnm.token');
+  const cookies = external_nookies_default().get(ctx, 'jnm.token');
 
   if (cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
     return {
       redirect: {
-        destination: '/login',
-        permanent: false
+        permanent: false,
+        destination: '/login'
       }
     };
   }

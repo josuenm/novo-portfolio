@@ -21,7 +21,6 @@ type FormData = {
 
 
 
-
 const schema = yup.object({
     email: yup.string().email("Digite um email válido").required("O e-mail é obrigatório"),
     password: yup.string().required("A senha é obrigatória")
@@ -122,10 +121,6 @@ const Login = () => {
         </>
     )
 }
-
-
-
-
 
 
 export default Login;

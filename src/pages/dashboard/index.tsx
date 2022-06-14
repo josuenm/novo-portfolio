@@ -27,13 +27,13 @@ import {
 
 export const getServerSideProps:GetServerSideProps = async (ctx: any) => {
 
-    const cookies = nookies.get(null, 'jnm.token')
+    const cookies = nookies.get(ctx, 'jnm.token')
 
     if(cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
         return {
             redirect: {
-                destination: '/login',
-                permanent: false
+                permanent: false,
+                destination: '/login'
             }
         }
     }

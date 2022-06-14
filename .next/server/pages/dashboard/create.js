@@ -71,13 +71,13 @@ const schema = yup__WEBPACK_IMPORTED_MODULE_0__.object({
   website: yup__WEBPACK_IMPORTED_MODULE_0__.string()
 }).required();
 const getServerSideProps = async ctx => {
-  const cookies = nookies__WEBPACK_IMPORTED_MODULE_1___default().get(null, 'jnm.token');
+  const cookies = nookies__WEBPACK_IMPORTED_MODULE_1___default().get(ctx, 'jnm.token');
 
   if (cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
     return {
       redirect: {
-        destination: '/login',
-        permanent: false
+        permanent: false,
+        destination: '/login'
       }
     };
   }
