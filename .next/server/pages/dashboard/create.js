@@ -71,7 +71,7 @@ const schema = yup__WEBPACK_IMPORTED_MODULE_0__.object({
   website: yup__WEBPACK_IMPORTED_MODULE_0__.string()
 }).required();
 const getServerSideProps = async ctx => {
-  const cookies = nookies__WEBPACK_IMPORTED_MODULE_1___default().get(ctx, 'jnm.token');
+  const cookies = nookies__WEBPACK_IMPORTED_MODULE_1___default().get(ctx);
 
   if (cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
     return {
@@ -117,7 +117,7 @@ const CreateProject = () => {
 
   const onSubmit = async data => {
     setIsLoading(true);
-    const cookies = nookies__WEBPACK_IMPORTED_MODULE_1___default().get(null, 'jnm.token');
+    const cookies = (0,nookies__WEBPACK_IMPORTED_MODULE_1__.parseCookies)();
 
     const formatedData = _objectSpread(_objectSpread({}, data), {}, {
       technologies: techs

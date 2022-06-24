@@ -1,5 +1,5 @@
 import * as yup from "yup"
-import nookies from "nookies";
+import nookies, { parseCookies } from "nookies";
 import Head from "next/head";
 import projectApi from "src/services/project";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -47,7 +47,7 @@ const schema = yup.object({
 
 export const getServerSideProps:GetServerSideProps = async (ctx: any) => {
 
-    const cookies = nookies.get(ctx, 'jnm.token')
+    const cookies = nookies.get(ctx)
 
     if(cookies['jnm.token'] === undefined || cookies['jnm.token'] === null) {
         return {
@@ -81,11 +81,12 @@ const CreateProject = () => {
     const { register, handleSubmit, setValue, formState: { errors } } = useForm<Inputs>({
         resolver: yupResolver(schema)
     });
+
     const onSubmit: SubmitHandler<Inputs> = async (data) => {
 
         setIsLoading(true)
         
-        const cookies = nookies.get(null, 'jnm.token')
+        const cookies = parseCookies()
 
         const formatedData = {
             ...data,

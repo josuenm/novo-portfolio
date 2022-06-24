@@ -1,13 +1,13 @@
 {
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/": "pages/index.html",
   "/login": "pages/login.html",
-  "/[id]": "pages/[id].js",
-  "/dashboard": "pages/dashboard.js",
-  "/dashboard/create": "pages/dashboard/create.js",
   "/dashboard/[id]/edit": "pages/dashboard/[id]/edit.js",
-  "/_app": "pages/_app.js",
+  "/dashboard/create": "pages/dashboard/create.js",
   "/dashboard/[id]": "pages/dashboard/[id].js",
-  "/_error": "pages/_error.js"
+  "/[id]": "pages/[id].js",
+  "/dashboard": "pages/dashboard.js"
 }
