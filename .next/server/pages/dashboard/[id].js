@@ -87,7 +87,6 @@ const getServerSideProps = async ctx => {
     id
   } = ctx.query;
   const res = await project/* default.findOne */.Z.findOne(id);
-  console.log(res);
 
   switch (res.status) {
     case 200:

@@ -74,10 +74,11 @@ const Login = () => {
                     error: true,
                     message: "Erro no servidor, tente novamente"
                 })
-                setIsLoading(true)
+                setIsLoading(false)
                 break;
-            
+                
             default:
+                setIsLoading(false)
                 break;
         }
 

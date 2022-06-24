@@ -43,8 +43,6 @@ export const getServerSideProps:GetServerSideProps = async (ctx) => {
 
     const res = await projectApi.findOne(id as string) as { status: number, data: ProjectProps };
 
-    console.log(res)
-
     switch(res.status) {
         case 200:
             return {

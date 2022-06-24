@@ -34,7 +34,7 @@ const projectApi = {
 
     create: async (token: string, data: ProjectProps) => {
         try {
-            const res = await api.post('/project/create', data,{
+            const res = await api.post('/project/create', data, {
                 headers: {
                     'jnm.token': token
                 }

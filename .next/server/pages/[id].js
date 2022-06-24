@@ -42,7 +42,6 @@ const getServerSideProps = async ctx => {
     id
   } = ctx.query;
   const res = await src_services_project__WEBPACK_IMPORTED_MODULE_7__/* ["default"].findOne */ .Z.findOne(id);
-  console.log(res);
 
   switch (res.status) {
     case 200:
