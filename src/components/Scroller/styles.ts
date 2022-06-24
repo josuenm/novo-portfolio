@@ -12,6 +12,9 @@ export const Container = styled.div`
     
     @media (max-width: 991.98px) {
         width: calc(100vw - (2 * .8rem));
+        margin: 0 auto;
+        border-left: 2px solid #000;
+        border-right: 3.5px solid #000;
     }
     
 
@@ -24,12 +27,12 @@ export const Container = styled.div`
         width: 0;
         height: 100%;
         box-shadow: 0 0 25px 50px #000;
-
+        
         @media (max-width: 991.98px) {
-            display: none;
+            box-shadow: 0 0 25px 25px #000;
         }
     }
-
+    
     &::after {
         content: '';
         position: absolute;
@@ -39,10 +42,6 @@ export const Container = styled.div`
         width: 0;
         height: 100%;
         box-shadow: 0 0 25px 50px #000;
-
-        @media (max-width: 991.98px) {
-            display: none;
-        }
     }
 `
 
