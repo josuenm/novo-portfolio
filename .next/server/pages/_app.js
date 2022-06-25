@@ -37,7 +37,7 @@ function ContactProvider({
 
 /***/ }),
 
-/***/ 4592:
+/***/ 6674:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -51,6 +51,8 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
 var dynamic = __webpack_require__(5152);
 var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: ./src/contexts/contact.tsx
 var contact = __webpack_require__(9116);
 // EXTERNAL MODULE: external "styled-components"
@@ -61,6 +63,10 @@ const GlobalStyle = (0,external_styled_components_.createGlobalStyle)(["*,*::bef
 /* harmony default export */ const styles_GlobalStyle = (GlobalStyle);
 // EXTERNAL MODULE: ./src/styles/theme.ts
 var theme = __webpack_require__(9642);
+;// CONCATENATED MODULE: ./src/utils/devTools.ts
+function disableReactDevTools() {
+  if (false) {}
+}
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
 ;// CONCATENATED MODULE: ./src/pages/_app.tsx
@@ -69,6 +75,8 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
 
 
 
@@ -90,6 +98,9 @@ function MyApp({
   Component,
   pageProps
 }) {
+  (0,external_react_.useEffect)(() => {
+    if (true) disableReactDevTools();
+  }, []);
   return /*#__PURE__*/jsx_runtime_.jsx(contact/* ContactProvider */.m, {
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_styled_components_.ThemeProvider, {
       theme: theme/* theme */.r,
@@ -178,7 +189,7 @@ module.exports = require("styled-components");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [152], () => (__webpack_exec__(4592)));
+var __webpack_exports__ = __webpack_require__.X(0, [152], () => (__webpack_exec__(6674)));
 module.exports = __webpack_exports__;
 
 })();

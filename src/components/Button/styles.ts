@@ -21,9 +21,9 @@ export const Container = styled.button`
     @media (min-width: 991.99px) {
         &:hover {
             background-color: transparent;
-            border: white;
-            color: white;
-            border: 1px solid white;
+            border: #fff;
+            color: #fff;
+            border: 1px solid #fff;
         }
     }
     
@@ -35,9 +35,9 @@ export const Container = styled.button`
         @media (min-width: 991.99px) {
             &:hover {
                 background-color: transparent;
-                border: white;
-                color: white;
-                border: 1px solid white;
+                border: #fff;
+                color: #fff;
+                border: 1px solid #fff;
             }
         }
     }

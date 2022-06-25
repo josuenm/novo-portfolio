@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 
 export const Phrase = styled.h3`
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: ${({ theme }) => theme.fontWeights.medium};
@@ -59,7 +59,7 @@ export const Circle = styled.div<GradientProp>`
     align-items: center;
     background: ${(props) => props.gradient};
 
-    color: white;
+    color: #fff;
     font-weight: ${({ theme }) => theme.fontWeights.medium};
     font-size: 1.2rem;
 `

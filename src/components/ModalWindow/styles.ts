@@ -21,13 +21,14 @@ export const Container = styled.div`
 
     &.modalInterface {
         position: absolute;
-        top: 10rem;
+        top: 15rem;
         left: 3.5rem;
         z-index: 2;
         transform: scale(.9);
         
 
         @media (max-width: 575.98px) {
+            top: 15rem;
             left: 0;
             transform: scale(.95);
         }
@@ -89,7 +90,7 @@ export const Window = styled.div`
 
 
 export const WindowTitle = styled.span`
-    color: white;
+    color: #fff;
     font-size: .9rem;
 `
 
@@ -118,13 +119,13 @@ export const Number = styled.span`
 
 
 export const Code = styled.div`
-    color: white;
     margin-left: 10px;
     margin-top: 10px;
-
+    
     span {
+        color: #fff !important;
         &.colored {
-            color: ${({ theme }) => theme.colors.blue40};
+            color: ${({ theme }) => theme.colors.blue40} !important;
         }
     }
 `

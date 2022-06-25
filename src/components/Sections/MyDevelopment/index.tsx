@@ -40,11 +40,11 @@ export function MyDevelopment() {
 
         <DescriptionContainer>
           <DescriptionText>
-            No front-end web geralmente eu uso <span>Next.js</span>, <span>React.js</span> ou o básico com <span>HTML</span>, <span>SASS</span>, <span>Javascript</span>. No mobile eu uso <span>React Native</span>. Além disso também faço o uso de frameworks de interface declarativa, quando uso React ou Next eu uso o <span>ChakraUI</span> e quando uso apenas o básico eu opto pelo <span>Bootstrap</span>. Além disso uso algumas dependências para auxiliar no desenvolvimento.
+            No front-end web geralmente eu uso <span>Next.js</span>, <span>React.js</span> ou o básico com <span>HTML</span>, <span>SASS</span>, <span>Javascript</span>. No mobile ainda estou aprendendo <span>React Native</span>. Além disso também faço o uso de frameworks de interface declarativa, quando uso React ou Next eu uso o <span>ChakraUI</span> e quando uso apenas o básico eu opto pelo <span>Bootstrap</span>. Além disso uso algumas dependências para auxiliar no desenvolvimento.
           </DescriptionText>
 
           <DescriptionText>
-            Não tenho foco no back-end mas consigo fazer o necessário para servir o front-end com segurança e manipular dados em banco de dados. Como eu sempre uso Javascript eu optei pelo <span>Node.js</span> com <span>Express</span>. E já usei <span>MongoDB</span> e <span>FaunaDB</span>.
+            Meu foco não é totalmente no back-end mas consigo fazer o necessário para servir o front-end com segurança e manipular dados usando um MongoDB. Como eu sempre uso Javascript eu optei pelo <span>Node.js</span> com <span>Express</span> mas estou aprendendo aos poucos o <span>AdonisJS</span>.
           </DescriptionText>
         </DescriptionContainer>
 
@@ -64,7 +64,7 @@ export function MyDevelopment() {
               </InfoTitle>
 
               <InfoDescription>
-                Antes de tudo gosto de esboçar o layout do projeto no figma e depois começo a fazer o desenvolvimento do layout, caso eu precise de dados que vem do back-end eu faço usando dados fakes com mirage.js ou eu opto por começar pelo back-end.
+                Antes de tudo gosto de esboçar o design do projeto no <span>figma</span>, isso ajuda a separar as responsabilidades, quando estou fazendo o design eu quero esboçar como projeto final vai ser, quando estou codando a responsabilidade é o design fiel, performance e achar soluções para problemas que acontece em desenvolvimento
               </InfoDescription>
 
             </InfoSet>
@@ -73,11 +73,11 @@ export function MyDevelopment() {
 
             <InfoSet>
               <InfoTitle>
-                Interfaces do futuro
+                Interfaces do futuro com React e Next
               </InfoTitle>
 
               <InfoDescription>
-                Interfaces modernas com performance, segurança e usabilidade. Esse é o futuro que eu busco para minhas aplicações.
+                Interfaces com React geralmente são pesadas e perde o SEO, para isso existe uma solução ótima que se chama NextJS (framework server side), com ele a performance fica melhor e o SEO é garantido. Mas ainda sim podemos sofrer com performance então para isso é sempre bom avançar no quesito React e dar uma olhada no fluxo de renderização com <span>dev-tools</span> e também saber usar <span>Memo, useMemo, useCallback</span>, lazy e dynamic, e até um <span>bundle analyzer</span> para saber quais bibliotecas estão pesando mais do que o normal.
               </InfoDescription>
 
             </InfoSet>
@@ -88,7 +88,7 @@ export function MyDevelopment() {
               </InfoTitle>
 
               <InfoDescription>
-                Por mais que meu foco não seja totalmente no back-end eu tento fazer ao máximo para criar um back-end seguro e que sirva o front-end de forma eficáz. Pensando nisso eu faço a criptografia de dados sigilosos para o banco de dados, autenticação JWT para o front-end e até estruturas ejs.
+                Meu foco não é totalmente em back-end mas estou correndo atrás para aperfeiçoar mais meu conhecimento, mas ainda sim eu consigo servir o front-end com estruturas <span>.ejs</span>, <span>JWT</span>, criação de models, status code para diferentes ocasiões, metodos <span>GET, POST, PUT, PATCH, DELETE</span>. Tudo isso eu consigo fazer usando o <span>MongoDB</span>. Entendo que isso não é tudo e pode parecer pouco para quem esta em outro patamar na tecnologia, mas é oque eu consigo oferecer por enquanto e estou procurando cada vez mais conhecimento. Também estou aprendendo <span>AdonisJS</span>, porque o <span>Express</span> é apenas uma biblioteca que faz o roteamento, ja o <span>AdonisJS</span> é um framework que tem tudo oque eu preciso nativamente.
               </InfoDescription>
             </InfoSet>
           </InfoContainer>        

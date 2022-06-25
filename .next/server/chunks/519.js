@@ -55,7 +55,7 @@ function Footer() {
       title: "Entre em contato",
       onClick: () => toggle(true)
     }), /*#__PURE__*/jsx_runtime_.jsx(Warning, {
-      children: "Esse portfolio foi desenvolvido usando NextJS, Styled-Components, Context-API, TypeScript, NodeJS (Express) e MongoDB"
+      children: "Esse portfolio foi desenvolvido usando NextJS, Styled-Components, Context-API, TypeScript, NodeJS, Express e MongoDB"
     })]
   });
 }

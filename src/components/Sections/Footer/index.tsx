@@ -17,7 +17,7 @@ export function Footer() {
             <Button title="Entre em contato" onClick={() => toggle(true)} />
 
             <Warning>
-                Esse portfolio foi desenvolvido usando NextJS, Styled-Components, Context-API, TypeScript, NodeJS (Express) e MongoDB
+                Esse portfolio foi desenvolvido usando NextJS, Styled-Components, Context-API, TypeScript, NodeJS, Express e MongoDB
             </Warning>
         </Container>
     )

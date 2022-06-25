@@ -92,7 +92,7 @@ export const ScrollerRow = styled.div<ScrollerRowProps>`
 export const ScrollerText = styled.span`
     text-align: center;
     width: 250px;
-    color: white;
+    color: #fff !important;
     font-size: 1.2rem;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
 `

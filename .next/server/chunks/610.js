@@ -55,7 +55,7 @@ const ProjectMainContainer = external_styled_components_default().div.withConfig
 const ProjectTitle = external_styled_components_default().h3.withConfig({
   displayName: "styles__ProjectTitle",
   componentId: "sc-14bejst-6"
-})(["text-align:center;color:white;font-weight:", ";"], ({
+})(["text-align:center;color:#fff;font-weight:", ";"], ({
   theme
 }) => theme.fontWeights.bold);
 const Bullet = external_styled_components_default().div.withConfig({
@@ -73,7 +73,7 @@ const Warning = external_styled_components_default().p.withConfig({
 const LinkToProject = external_styled_components_default().a.withConfig({
   displayName: "styles__LinkToProject",
   componentId: "sc-14bejst-9"
-})(["color:white;border:1px solid ", ";text-align:center;width:fit-content;padding:.4rem 2.5rem;border-radius:.25rem;cursor:pointer;@media (min-width:991.99px){transition:ease .4s all;&:hover{background-color:#fff;color:#000;}}"], ({
+})(["color:#fff;border:1px solid ", ";text-align:center;width:fit-content;padding:.4rem 2.5rem;border-radius:.25rem;cursor:pointer;@media (min-width:991.99px){transition:ease .4s all;&:hover{background-color:#fff;color:#000;}}"], ({
   theme
 }) => theme.colors.gray50);
 const Arrow = external_styled_components_default().div.withConfig({

@@ -3,7 +3,11 @@ import styled from "styled-components";
 
 
 
-export const Container = styled.section``
+export const Container = styled.section`
+    span {
+        color: ${({ theme }) => theme.colors.blue40};
+    }
+`
 
 
 export const DescriptionContainer = styled.div`
@@ -22,11 +26,6 @@ export const DescriptionText = styled.p`
     color: ${({ theme }) => theme.colors.gray60};
     font-size: .9rem;
     font-weight: ${({ theme }) => theme.fontWeights.regular};
-
-
-    span {
-        color: ${({ theme }) => theme.colors.blue40};
-    }
 
     @media (max-width: 991.98px) {
         font-size: 1.1rem;
@@ -55,6 +54,10 @@ export const InfoContainer = styled.div`
 
 export const ModalSet = styled.div`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10rem;
 
     @media (max-width: 991.98px) {
         padding-bottom: 20rem;
@@ -74,7 +77,7 @@ export const InfoSet = styled.div`
 `
 
 export const InfoTitle = styled.h3`
-    color: white;
+    color: #fff;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
     font-size: 1.3rem;
     

@@ -70,7 +70,7 @@ export const ProjectMainContainer = styled.div`
 
 export const ProjectTitle = styled.h3`
     text-align: center;
-    color: white;
+    color: #fff;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
 `
 
@@ -100,7 +100,7 @@ export const Warning = styled.p`
 
 
 export const LinkToProject = styled.a`
-    color: white;
+    color: #fff;
     border: 1px solid ${({ theme }) => theme.colors.gray50};
     text-align: center;
     width: fit-content;

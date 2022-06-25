@@ -98,7 +98,7 @@ export const Message = styled.div`
     padding: 1rem;
     background: #252525;
     border-radius: 1rem;
-    color: white;
+    color: #fff;
     width: 350px;
     
     @media (max-width: 575.98px) {
@@ -145,7 +145,7 @@ export const Network = styled.div`
 
 export const NetworkTitle = styled.div`
     font-size: 1.2rem;
-    color: white;
+    color: #fff;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
 `
 

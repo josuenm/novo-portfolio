@@ -5,9 +5,9 @@
   "/404": "pages/404.html",
   "/": "pages/index.html",
   "/login": "pages/login.html",
-  "/dashboard/[id]": "pages/dashboard/[id].js",
-  "/dashboard": "pages/dashboard.js",
-  "/dashboard/create": "pages/dashboard/create.js",
   "/dashboard/[id]/edit": "pages/dashboard/[id]/edit.js",
-  "/[id]": "pages/[id].js"
+  "/dashboard": "pages/dashboard.js",
+  "/dashboard/[id]": "pages/dashboard/[id].js",
+  "/[id]": "pages/[id].js",
+  "/dashboard/create": "pages/dashboard/create.js"
 }
