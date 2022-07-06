@@ -24,10 +24,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    window.onload = () => setIsLoaded(true)
-
+    
     if (process.env.NODE_ENV === "production") disableReactDevTools();
   }, [])
+  
+  if (typeof window !== "undefined") {
+    window.onload = () => setIsLoaded(true)
+  }
 
   if(!isLoaded) return <LoadingScreen />
   return(

@@ -123,10 +123,11 @@ function MyApp({
     1: setIsLoaded
   } = (0,external_react_.useState)(false);
   (0,external_react_.useEffect)(() => {
-    window.onload = () => setIsLoaded(true);
-
     if (true) disableReactDevTools();
   }, []);
+
+  if (false) {}
+
   if (!isLoaded) return /*#__PURE__*/jsx_runtime_.jsx(LoadingScreen, {});
   return /*#__PURE__*/jsx_runtime_.jsx(contact/* ContactProvider */.m, {
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_styled_components_.ThemeProvider, {
