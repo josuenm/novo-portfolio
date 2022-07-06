@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import LoadingScreen from 'src/components/LoadingScreen'
 import { ContactProvider } from 'src/contexts/contact'
 import GlobalStyle from 'src/styles/GlobalStyle'
 import { theme } from 'src/styles/theme'
@@ -20,11 +21,16 @@ const TopProgressBar = dynamic(
 
 function MyApp({ Component, pageProps }: AppProps) {
 
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+
   useEffect(() => {
+    window.onload = () => setIsLoaded(true)
+
     if (process.env.NODE_ENV === "production") disableReactDevTools();
   }, [])
 
-  return (
+  if(!isLoaded) return <LoadingScreen />
+  return(
     <ContactProvider>
       <ThemeProvider theme={theme}>
         <TopProgressBar />
