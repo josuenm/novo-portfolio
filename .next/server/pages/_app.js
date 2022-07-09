@@ -37,7 +37,7 @@ function ContactProvider({
 
 /***/ }),
 
-/***/ 7826:
+/***/ 6674:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -51,50 +51,30 @@ __webpack_require__.d(__webpack_exports__, {
 // EXTERNAL MODULE: ./node_modules/next/dynamic.js
 var dynamic = __webpack_require__(5152);
 var dynamic_default = /*#__PURE__*/__webpack_require__.n(dynamic);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: external "styled-components"
 var external_styled_components_ = __webpack_require__(7518);
-var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
-;// CONCATENATED MODULE: ./src/components/LoadingScreen/styles.ts
-
-const Background = external_styled_components_default().div.withConfig({
-  displayName: "styles__Background",
-  componentId: "sc-1ayllib-0"
-})(["position:fixed;top:0;left:0;right:0;width:100vw;height:100vh;background-color:#000;display:flex;justify-content:center;align-items:center;"]);
-const Spinner = external_styled_components_default().div.withConfig({
-  displayName: "styles__Spinner",
-  componentId: "sc-1ayllib-1"
-})(["width:50px;height:50px;border-radius:50%;border-top:1px solid #fff;border-left:1px solid #fff;animation:spinner-animation linear 1s infinite forwards;@keyframes spinner-animation{to{transform:rotate(390deg);}}"]);
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-;// CONCATENATED MODULE: ./src/components/LoadingScreen/index.tsx
-
-
-function LoadingScreen() {
-  return /*#__PURE__*/jsx_runtime_.jsx(Background, {
-    children: /*#__PURE__*/jsx_runtime_.jsx(Spinner, {})
-  });
-}
-// EXTERNAL MODULE: ./src/contexts/contact.tsx
-var contact = __webpack_require__(9116);
 ;// CONCATENATED MODULE: ./src/styles/GlobalStyle.ts
 
 const GlobalStyle = (0,external_styled_components_.createGlobalStyle)(["*,*::before,*::after{box-sizing:border-box;padding:0;margin:0;}::-webkit-scrollbar{width:7px;height:0;border-radius:3rem;background-color:#101010;}::-webkit-scrollbar-thumb{background-color:#454545;border-radius:3rem;}body{font-family:'Inter',sans-serif;background-color:#000;}h1,h2,h3,h4,h5,h6,span,p{font-size:16px;}a{text-decoration:none;color:inherit;cursor:pointer;}button{cursor:pointer;}"]);
 /* harmony default export */ const styles_GlobalStyle = (GlobalStyle);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: ./src/contexts/contact.tsx
+var contact = __webpack_require__(9116);
 // EXTERNAL MODULE: ./src/styles/theme.ts
 var theme = __webpack_require__(9642);
 ;// CONCATENATED MODULE: ./src/utils/devTools.ts
 function disableReactDevTools() {
   if (false) {}
 }
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
 ;// CONCATENATED MODULE: ./src/pages/_app.tsx
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 
@@ -118,17 +98,9 @@ function MyApp({
   Component,
   pageProps
 }) {
-  const {
-    0: isLoaded,
-    1: setIsLoaded
-  } = (0,external_react_.useState)(false);
   (0,external_react_.useEffect)(() => {
     if (true) disableReactDevTools();
   }, []);
-
-  if (false) {}
-
-  if (!isLoaded) return /*#__PURE__*/jsx_runtime_.jsx(LoadingScreen, {});
   return /*#__PURE__*/jsx_runtime_.jsx(contact/* ContactProvider */.m, {
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)(external_styled_components_.ThemeProvider, {
       theme: theme/* theme */.r,
@@ -217,7 +189,7 @@ module.exports = require("styled-components");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [152], () => (__webpack_exec__(7826)));
+var __webpack_exports__ = __webpack_require__.X(0, [152], () => (__webpack_exec__(6674)));
 module.exports = __webpack_exports__;
 
 })();
