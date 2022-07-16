@@ -1,3 +1,5 @@
+import Image from "next/image";
+import TachIcon from "src/assets/icons/Tech.svg";
 import { Checkpoint } from "src/components/Checkpoint";
 import { ModalCode, ModalInterface } from "src/components/ModalWindow";
 import { SafeArea } from "src/components/SafeArea";
@@ -13,6 +15,8 @@ import {
   InfoSet,
   InfoTitle,
   InfoDescription,
+  TechnologiesContainer,
+  Technology,
 } from "./styles";
 
 
@@ -28,6 +32,59 @@ export function MyDevelopment() {
     'Javascript', 'Typescript', 'Redux Toolkit', 'React-Hook-Form', 'Styled-components', 'Axios', 'MirageJS', 'MongoDB', 'Firebase'
   ]
 
+
+  const technologies = [
+    {
+      id: 1,
+      name: "Javascript",
+      experience: "1 a 2 anos"
+    },
+    {
+      id: 2,
+      name: "Typescript",
+      experience: "1 a 2 anos"
+    },
+    {
+      id: 3,
+      name: "ReactJS",
+      experience: "1 a 2 anos"
+    },
+    {
+      id: 4,
+      name: "React Native",
+      experience: "menos de 1 ano"
+    },
+    {
+      id: 5,
+      name: "NextJS",
+      experience: "menos de 1 ano"
+    },
+    {
+      id: 6,
+      name: "Redux Toolkit",
+      experience: "menos de 1 ano"
+    },
+    {
+      id: 7,
+      name: "SASS",
+      experience: "1 a 2 anos"
+    },
+    {
+      id: 8,
+      name: "NodeJS",
+      experience: "menos de 1 ano"
+    },
+    {
+      id: 9,
+      name: "Express",
+      experience: "menos de 1 ano"
+    },
+    {
+      id: 10,
+      name: "MongoDB",
+      experience: "menos de 1 ano"
+    },
+  ]
 
 
 
@@ -88,11 +145,21 @@ export function MyDevelopment() {
               </InfoTitle>
 
               <InfoDescription>
-                Meu foco não é totalmente em back-end mas estou correndo atrás para aperfeiçoar mais meu conhecimento, mas ainda sim eu consigo servir o front-end com estruturas <span>.ejs</span>, <span>JWT</span>, criação de models, status code para diferentes ocasiões, metodos <span>GET, POST, PUT, PATCH, DELETE</span>. Tudo isso eu consigo fazer usando o <span>MongoDB</span>. Entendo que isso não é tudo e pode parecer pouco para quem esta em outro patamar na tecnologia, mas é oque eu consigo oferecer por enquanto e estou procurando cada vez mais conhecimento. Também estou aprendendo <span>AdonisJS</span>, porque o <span>Express</span> é apenas uma biblioteca que faz o roteamento, ja o <span>AdonisJS</span> é um framework que tem tudo oque eu preciso nativamente.
+                Meu foco não é totalmente em back-end mas estou correndo atrás para aperfeiçoar mais meu conhecimento, mas ainda sim eu consigo servir o front-end com estruturas <span>.ejs</span>, <span>JWT</span>, criação de models, status code para diferentes ocasiões, metodos <span>GET, POST, PUT, PATCH, DELETE</span>. Tudo isso eu consigo fazer usando o <span>MongoDB</span>. Entendo que isso não é tudo e pode parecer pouco para quem esta em outro patamar na tecnologia, mas é oque eu consigo oferecer por enquanto e estou procurando cada vez mais conhecimento.
               </InfoDescription>
             </InfoSet>
           </InfoContainer>        
         </MainDescriptionContainer>
+
+        <TechnologiesContainer>
+            {technologies.map((tech) => (
+              <Technology key={tech.id}>
+                <span className="title">{tech.name}</span>
+                <span className="experience">{tech.experience}</span>
+              </Technology>
+            ))}
+        </TechnologiesContainer>
+
         <ScrollerContainer>
           <Scroller words={firstWords} speed='35s' />
           <Scroller words={secondWords} speed='40s' />

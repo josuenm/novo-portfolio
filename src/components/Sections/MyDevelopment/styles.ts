@@ -33,11 +33,11 @@ export const DescriptionText = styled.p`
 `
 
 
+
 export const MainDescriptionContainer = styled.div`
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 10%;
-    margin: 5rem 0 10rem 0;
 
     @media (max-width: 991.98px) {
         display: flex;
@@ -94,5 +94,53 @@ export const InfoDescription = styled.p`
 
     @media (max-width: 991.98px) {
         font-size: 1.1rem;
+    }
+`
+
+
+
+
+export const TechnologiesContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 5rem 0;
+    
+    @media (max-width: 991.98px) {
+        flex-direction: column;
+        align-items: center;
+    }
+`
+
+export const Technology = styled.div`
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    background-color: #151515;
+    border-radius: 3rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    
+    opacity: .5;
+    transition: ease .4s opacity;
+    &:hover {
+        opacity: 1;
+    }
+
+    @media (max-width: 991.98px) {
+        width: 60%;
+    }
+    
+    .title {
+        font-size: .9rem;
+        color: #fff;
+    }
+    
+    .experience {
+        font-size: .8rem;
+        color: ${({ theme }) => theme.colors.blue40};
     }
 `

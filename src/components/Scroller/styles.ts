@@ -29,7 +29,7 @@ export const Container = styled.div`
         box-shadow: 0 0 25px 50px #000;
         
         @media (max-width: 991.98px) {
-            box-shadow: 0 0 25px 25px #000;
+            box-shadow: 0 0 25px 46px #000;
         }
     }
     
@@ -42,6 +42,10 @@ export const Container = styled.div`
         width: 0;
         height: 100%;
         box-shadow: 0 0 25px 50px #000;
+
+        @media (max-width: 991.98px) {
+            box-shadow: 0 0 25px 46px #000;
+        }
     }
 `
 
